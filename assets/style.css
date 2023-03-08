@@ -14,8 +14,10 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    /* padding-left: 5rem;
-    padding-right: 5rem; */
+    border-top: 1px solid #AE9583;
+    border-bottom: 1px solid #AE9583;
+    margin-bottom: 2rem;
+    position: fixed;
 }
 
 .type {
@@ -44,4 +46,22 @@ a {
 
 .fa-heart {
     padding-inline: .5rem;
+}
+
+
+/* main */
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+
+.card{
+   background-color: red;
+   width: 300px;
+   height: 500px;
+   margin: .5rem;
 }
