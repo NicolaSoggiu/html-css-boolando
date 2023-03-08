@@ -106,19 +106,24 @@ a {
     width: 100%;
 }
 
-.img:hover{
+.img-hover:hover{
     opacity: 0%;
 }
-
+ 
 .heart{
     position: absolute;
     top: .5rem;
     right: 0;
+    color: black;
     background-color: white;
     font-size: 1.5rem;
     padding-inline: .5rem;
     padding-top: .2rem;
     padding-bottom: .2rem;
+}
+
+.heart:hover{
+    color: red;
 }
 
 .sales{
