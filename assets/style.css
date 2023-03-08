@@ -16,8 +16,9 @@
     align-items: center;
     border-top: 1px solid #AE9583;
     border-bottom: 1px solid #AE9583;
-    margin-bottom: 2rem;
     position: fixed;
+    top: 0;
+    left: 0;
 }
 
 .type {
@@ -51,17 +52,54 @@ a {
 
 /* main */
 
-.container{
+.container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-left: 5rem;
-    margin-right: 5rem;
+    max-width: 1000px;
+    margin-inline: auto;
+    margin-top: 7rem;
 }
 
-.card{
+.card {
    background-color: red;
    width: 300px;
    height: 500px;
    margin: .5rem;
+   margin-bottom: 3rem
+}
+
+/* footer */
+
+footer{
+    height: 5rem;
+    background-color: #1A1A1A;
+}
+
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-info{
+    padding-bottom: .5rem;
+}
+
+.footer-left{
+    font-size: .8rem;
+    padding-left: 10rem;
+    padding-top: 1.2rem;
+}
+
+.footer-right{
+    padding-right: 10rem;
+}
+
+.footer-left, .footer-right{
+    color: white;
+    padding-top: 1.2rem;
+}
+
+.facebook, .pinterest{
+    padding-inline: .5rem;
 }
