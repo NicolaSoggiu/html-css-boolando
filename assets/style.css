@@ -8,12 +8,11 @@
 
 /* header */
 
-.orange {
+header {
     height: 4rem;
     width: 100%;
     background-color: #FF6900;
     display: flex;
-    justify-content: space-around;
     align-items: center;
     border-top: 1px solid #AE9583;
     border-bottom: 1px solid #AE9583;
@@ -30,16 +29,16 @@
 
 .logo {
     text-align: center;
-    padding-right: 4rem;
     flex: 0 0 60%;
 }
 
 .logo img {
-    width: 20%;
+    height: 2rem;
 }
 
 .nav-social {
     flex: 0 0 20%;
+    padding-left: 3rem;
 }
 
 a {
@@ -54,63 +53,63 @@ a {
 
 /* main */
 
-.container {
+main {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
     max-width: 1000px;
     margin-inline: auto;
     margin-top: 7rem;
+    padding-inline: 1rem;
 }
 
 .card {
-   width: 300px;
-   height: 500px;
+   width: calc(100% / 3 - 1rem);
    margin: .5rem;
    margin-bottom: 3rem;
    background-size: contain;
    background-repeat: no-repeat;
 }
 
-.first{
+.img {
+    position: relative;
+    width: 100%;
+    height: max-content;
+    cursor: pointer;
+}
+
+.img img {
+    width: 100%;
+}
+
+.img-hover:hover {
+    opacity: 0%;
+}
+
+.first {
     background-image: url(../img/1b.webp);
 }
 
-.second{
+.second {
     background-image: url(../img/2b.webp);
 }
 
-.third{
+.third {
     background-image: url(../img/3b.webp);
 }
 
-.fourth{
+.fourth {
     background-image: url(../img/4b.webp);
 }
 
-.fifth{
+.fifth {
     background-image: url(../img/5b.webp);
 }
 
-.six{
+.six {
     background-image: url(../img/6b.webp);
 }
 
-.img{
-    position: relative;
-    width: 100%;
-    height: max-content; 
-}
-
-.img img{
-    width: 100%;
-}
-
-.img-hover:hover{
-    opacity: 0%;
-}
- 
-.heart{
+.heart {
     position: absolute;
     top: .5rem;
     right: 0;
@@ -122,11 +121,11 @@ a {
     padding-bottom: .2rem;
 }
 
-.heart:hover{
+.heart:hover {
     color: red;
 }
 
-.sales{
+.sales {
     font-size: 1rem;
     position: absolute;
     bottom: 3rem;
@@ -136,7 +135,7 @@ a {
     padding: .2rem;
 }
 
-.text-1{
+.text-1 {
     position: absolute;
     bottom: 3rem;
     left: 2.7rem;
@@ -145,7 +144,7 @@ a {
     padding: .2rem;
 }
 
-.text-2{
+.text-2 {
     position: absolute;
     bottom: 3rem;
     left: 0;
@@ -154,46 +153,42 @@ a {
     padding: .2rem;
 }
 
-.price{
-    font-size: .8rem;
+.price {
     color: red;
 }
 
-del{
+del {
     color: black;
 }
 
 /* footer */
 
-footer{
+footer {
     height: 5rem;
     background-color: #1A1A1A;
-}
-
-.footer-container{
     display: flex;
     justify-content: space-between;
 }
 
-.footer-info{
+.footer-info {
     padding-bottom: .5rem;
 }
 
-.footer-left{
+.footer-left {
     font-size: .8rem;
     padding-left: 10rem;
     padding-top: 1.2rem;
 }
 
-.footer-right{
+.footer-right {
     padding-right: 10rem;
 }
 
-.footer-left, .footer-right{
+.footer-left, .footer-right {
     color: white;
     padding-top: 1.2rem;
 }
 
-.facebook, .pinterest{
+.facebook, .pinterest {
     padding-inline: .5rem;
 }
